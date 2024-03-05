@@ -22,7 +22,7 @@ const [menuicon,setmenuicon]=useState(true);
   
  }
   return (
-    <div className=' z-10 sticky bg-white top-0 flex sm:justify-between justify-start gap-5 px-20 py-6 sm:py-2 shadow-lg sm:items-center items-start sm:flex-row flex-col '>
+    <div className=' z-10 sticky bg-white top-0 flex sm:justify-between justify-start gap-5 sm:px-20 px-10 py-6 sm:py-2 shadow-lg sm:items-center items-start sm:flex-row flex-col '>
       <div>
         <img src={logo_url} alt="logo" className='w-20 h-16' />
       </div>

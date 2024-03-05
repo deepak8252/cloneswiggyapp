@@ -7,7 +7,7 @@ const ResturantData = ({ data }) => {
     <div className="flex flex-wrap gap-12  justify-center mt-5">
       {data.map((item) => (
         <>
-          <Link to={`/restaurant/${item.info.id}`} className="flex gap-4 cursor-pointer shadow p-2 text-center rounded-md flex-col items-center justify-center w-11/12 sm:w-52  ">
+          <Link to={`/restaurant/${item.info.id}`} className="flex gap-4 cursor-pointer shadow p-2 text-center rounded-md flex-col items-center justify-center w-72 sm:w-52  ">
             <img src={sliderimgUrl + item.info.cloudinaryImageId} alt="" className="h-52 w-full rounded-lg"/>
             <h2 className="text-xl font-medium sm:font-semibold">{item.info.name}</h2>
             <div className="flex items-center gap-4">

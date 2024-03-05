@@ -6,7 +6,7 @@ import SearchBar from '../component/SearchBar'
 
 const Home = () => {
   return (
-    <div className='py-10 px-20'>
+    <div className='py-5 sm:py-10 px-10 sm:px-20'>
       <CartSlider/>
       <Restaurant/>
       <DelhiRestaurant/>
