@@ -17,6 +17,7 @@ function App() {
     <Route exact path='/search' element={<SearchBar/>}/>
     <Route path='/restaurant/:resid' element={<Restaurantmenu/>}/>
   </Routes>
+  
   </BrowserRouter>
  
   

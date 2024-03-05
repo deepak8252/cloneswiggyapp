@@ -6,7 +6,6 @@ const DelhiRestaurant = () => {
     useEffect(()=>{
       const result=resdata.data.cards[1].card.card.gridElements.infoWithStyle.restaurants;
       setRestaurant(result);
-    console.log(resdata);
     },[])
   return (
     <div>
