@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.visible{
+   display: flex;
+   transition: all .4s;
+}
