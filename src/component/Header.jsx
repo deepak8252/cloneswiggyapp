@@ -12,9 +12,7 @@ const Header = () => {
 const [menuicon,setmenuicon]=useState(true);
   const menuref=useRef();
   const viewref=useRef()
- if(viewref){
-  console.log("hello")
- }
+
  const navbarToggle=(e)=>{
   if(menuref){
     menuref.current.classList.toggle("visible");
