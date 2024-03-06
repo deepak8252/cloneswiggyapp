@@ -4,6 +4,7 @@ import Header from './component/Header'
 import Home from './pages/Home'
 import SearchBar from './component/SearchBar'
 import Restaurantmenu from './pages/Restaurantmenu'
+import Searchproduct from './pages/Searchproduct'
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
     <Route exact path='/' element={<Home/>}/>
     <Route exact path='/search' element={<SearchBar/>}/>
     <Route path='/restaurant/:resid' element={<Restaurantmenu/>}/>
+     <Route path='/searchproduct/:term' element={<Searchproduct/>}/>  
   </Routes>
   
   </BrowserRouter>

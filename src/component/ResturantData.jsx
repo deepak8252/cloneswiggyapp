@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const ResturantData = ({ data }) => {
   return (
     <div className="flex flex-wrap gap-12  justify-center mt-5">
-      {data.map((item,index) => (
+      { data && data.map((item,index) => (
         <>
           <Link to={`/restaurant/${item.info.id}`} key={index} className="flex gap-4 cursor-pointer shadow p-2 text-center rounded-md flex-col items-center justify-center w-72 sm:w-52  ">
             <img src={sliderimgUrl + item.info.cloudinaryImageId} alt="" className="h-52 w-full rounded-lg"/>

@@ -10,7 +10,6 @@ const Home = () => {
       <CartSlider/>
       <Restaurant/>
       <DelhiRestaurant/>
-      <SearchBar/>
     </div>
   )
 }

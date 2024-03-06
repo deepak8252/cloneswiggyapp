@@ -6,6 +6,7 @@ import Person2Icon from '@mui/icons-material/Person2';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 const [menuicon,setmenuicon]=useState(true);
@@ -23,12 +24,12 @@ const [menuicon,setmenuicon]=useState(true);
  }
   return (
     <div className=' z-10 sticky bg-white top-0 flex sm:justify-between justify-start gap-5 sm:px-20 px-10 py-6 sm:py-2 shadow-lg sm:items-center items-start sm:flex-row flex-col '>
-      <div>
+      <Link to={"/"}>
         <img src={logo_url} alt="logo" className='w-20 h-16' />
-      </div>
+      </Link>
       <div className='flex'>
         <ul className='sm:flex gap-5 flex-col sm:flex-row sm:gap-11 hidden sm:mt-0 mt-4  ' ref={menuref}>
-          <li  className=' text-gray-600 hover:text-orange-500 cursor-pointer font-normal text-sm sm:text-lg  capitalize'><SearchIcon />{" "}search</li>
+          <Link to={"/search"}  className=' text-gray-600 hover:text-orange-500 cursor-pointer font-normal text-sm sm:text-lg  capitalize'><SearchIcon />{" "}search</Link>
           <li className=' text-gray-600  hover:text-orange-500 cursor-pointer text-sm font-normal sm:text-lg capitalize'><LocalOfferIcon className=' font-normal text-gray-500'/>{" "}offers</li>
           <li className=' text-gray-600  hover:text-orange-500 cursor-pointer font-normal text-sm sm:text-lg  capitalize'><HelpIcon/>{" "}help</li>
           <li className=' text-gray-600  hover:text-orange-500 cursor-pointer font-normal text-sm sm:text-lg  capitalize'><Person2Icon/>{" "}deepak</li>
