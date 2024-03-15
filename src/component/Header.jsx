@@ -7,9 +7,11 @@ import LocalMallIcon from '@mui/icons-material/LocalMall';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
-const [menuicon,setmenuicon]=useState(true);
+const product=useSelector((state)=>state.cart.cartitems);
+console.log(product)
   const menuref=useRef();
   const viewref=useRef()
 
@@ -31,7 +33,7 @@ const [menuicon,setmenuicon]=useState(true);
           <li className=' text-gray-600  hover:text-orange-500 cursor-pointer text-sm font-normal sm:text-lg capitalize'><LocalOfferIcon className=' font-normal text-gray-500'/>{" "}offers</li>
           <li className=' text-gray-600  hover:text-orange-500 cursor-pointer font-normal text-sm sm:text-lg  capitalize'><HelpIcon/>{" "}help</li>
           <li className=' text-gray-600  hover:text-orange-500 cursor-pointer font-normal text-sm sm:text-lg  capitalize'><Person2Icon/>{" "}deepak</li>
-          <li className=' text-gray-600  hover:text-orange-500 cursor-pointer font-normal text-sm sm:text-lg  capitalize'><LocalMallIcon/>{" "}cart 0</li>
+          <Link to={`/cart`} className=' text-gray-600  hover:text-orange-500 cursor-pointer font-normal text-sm sm:text-lg  capitalize'><LocalMallIcon/>{" "}cart {product.length}</Link>
         </ul>
   
      <div ref={viewref} className=' fixed right-2 top-4 block sm:hidden cursor-pointer' onClick={navbarToggle}>
